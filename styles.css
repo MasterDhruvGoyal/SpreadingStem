@@ -1,35 +1,33 @@
 body {
-    display: flex;
+    background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-aside {
-    position: fixed;
-    top: 0;
-    left: 0;
+.sidebar {
     height: 100%;
-    width: 60px;
-    background-color: #f4f4f4;
+    width: 80px; /* Increased width for larger icons */
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); /* Center the sidebar vertically */
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* Center the icons vertically */
     padding-top: 20px;
 }
-aside nav ul {
-    list-style: none;
-    padding: 0;
-}
-aside nav ul li {
-    margin: 20px 0;
-}
-aside nav ul li a {
-    color: #333;
-    font-size: 24px;
+.sidebar a {
+    padding: 15px; /* Increased padding for larger clickable area */
+    text-align: center;
     text-decoration: none;
+    font-size: 30px; /* Increased font size for larger icons */
+    color: white;
+    display: block;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, transform 0.3s;
 }
-main {
-    margin-left: 80px;
-    padding: 20px;
-}
-
-#email{
-    color: orange;
+.sidebar a:hover {
+    background-color: red;
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
 }
