@@ -5,7 +5,7 @@ body {
 }
 .sidebar {
     height: 100%;
-    width: 80px; /* Increased width for larger icons */
+    width: 20vw; /* Increased width for larger icons */
     position: fixed;
     top: 50%;
     left: 0;
@@ -21,13 +21,15 @@ body {
     padding: 15px; /* Increased padding for larger clickable area */
     text-align: center;
     text-decoration: none;
-    font-size: 30px; /* Increased font size for larger icons */
+    font-size: 10vw; /* Increased font size for larger icons */
     color: white;
     display: block;
     margin-bottom: 20px;
     transition: background-color 0.3s, transform 0.3s;
 }
 .sidebar a:hover {
+    border-radius: 10px;
     background-color: red;
     transform: scale(1.1); /* Slightly enlarge icon on hover */
+    color: yellow;
 }
