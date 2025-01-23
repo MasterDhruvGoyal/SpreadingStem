@@ -1,5 +1,33 @@
 body {
-    background-color: black;
+    display: flex;
+}
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+aside nav ul {
+    list-style: none;
+    padding: 0;
+}
+aside nav ul li {
+    margin: 20px 0;
+}
+aside nav ul li a {
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+}
+main {
+    margin-left: 80px;
+    padding: 20px;
 }
 
 #email{
