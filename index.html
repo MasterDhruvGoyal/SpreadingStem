@@ -64,7 +64,7 @@
         href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-light.css"
       >
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron|Playwrite+IN">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron|Playwrite+IN|Tinos">
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
 </head>
@@ -81,13 +81,56 @@
             <div class="content">
                 <h1 id="titleheading">Spreading STEM Education</h1>
                 <h2 class="subheading">An Advocacy Project</h2>
+                <div id="lmdiv">
+                    <button class="lmbutton" onclick="window.location.href='#Problem'">
+                        <p id="lmtext">Learn More</p>
+                        <i class="fa-light fa-angle-down lmlogo"></i>  
+                    </button>
+                </div>
                 <div id="Problem" class="section">
                     <h2>Problem</h2>
-                    <p>Details about the problem of STEM education.</p>
+                    <p>Information on the problem of STEM education.</p>
                 </div>
                 <div id="Promote" class="section">
                     <h2>Promote</h2>
-                    <p>Information on how to promote STEM education.</p>
+                    <div class="flipcontainer">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <p>problem 1</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>John Doe</h1>
+                                    <p>Architect + Engineer</p>
+                                    <p>We love that guy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>John Doe</h1>
+                                    <p>Architect + Engineer</p>
+                                    <p>We love that guy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>John Doe</h1>
+                                    <p>Architect + Engineer</p>
+                                    <p>We love that guy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="Learning" class="section">
                     <h2>Learning</h2>

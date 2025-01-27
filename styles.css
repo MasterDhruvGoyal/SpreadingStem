@@ -35,7 +35,8 @@ body {
 }
 
 .sidebar a {
-    padding: 15px;
+    padding-top: 10%;
+    padding-bottom: 10%;
     text-align: center;
     text-decoration: none;
     font-size: 5vw;
@@ -81,4 +82,95 @@ body {
     font-weight: 400;
     font-style: italic;
     margin-bottom: 0px;
+}
+
+.flipcontainer{
+    display: flex;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 20%;
+  height: 200px;
+  perspective: 1000px;
+  padding:10px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+#lmdiv{
+    display: flex;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+}
+
+.lmbutton {
+    width: 50%;
+    background-color: #FFA500; /* Orange color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lmbutton:hover {
+    background-color: #FF8C00; /* Darker orange on hover */
+}
+
+#lmtext{
+    padding: 0px;
+    padding-top: 5px;
+    color: black;
+    font-weight: 600;
+    font-size: 3.5vw;
+    margin: 0px;
+    font-family: "Tinos", serif;
+}
+
+.lmlogo{
+    color:black;
+    font-size: 4vw;
+    padding: 0px;
+    margin: 0px;
 }
