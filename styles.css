@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --bgcolor:#181818;
 }
@@ -93,10 +97,10 @@ body {
 
 .flip-card {
   background-color: transparent;
-  width: 25vw;
-  height: 50vh;
+  width: 30vw;
+  height: 40vh;
   perspective: 1000px;
-  padding:10px;
+  padding:30px;
 }
 
 /* This container is needed to position the front and back side */
@@ -121,18 +125,17 @@ body {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  border-radius: 5px;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
+  background-color: #20CC00;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #A9FF99;
   transform: rotateY(180deg);
 }
 
@@ -253,4 +256,107 @@ body {
 
 .probsubtext {
     margin-bottom: 13vh;
+}
+
+.cardheading{
+    color: white;
+    font-size: 2.1vw;
+    text-align: center;
+    margin: 2vh;
+    font-family: "Spectral", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+}
+
+.cardtext{
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 2vh;
+    font-family: "Spectral", sans-serif;
+    font-weight: 200;
+    margin-bottom: 2vh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.cardbacktext{
+    color: black;
+    font-size: 1vw;
+    text-align: center;
+    margin: 2vh;
+    font-family: "Spectral", sans-serif;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.resourceinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.restext {
+    flex: 1;
+    padding: 10px;
+}
+
+.reslogo {
+    width: 10vw;
+    height: 16vh;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+}
+
+.rlogo{
+    color:red;
+    font-size: 4vw;
+}
+
+.horizontal-line {
+    border-top: 2px solid #000;
+    margin: 20px 0;
+}
+
+.lefttext{
+    float: left;
+}
+
+.righttext{
+    float: right;
+}
+
+.resheading{
+    color: #1b6bb5;
+    font-size: 2.1vw;
+    margin: 2vh;
+    font-family: "Spectral", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+}
+
+.explain{
+    color: #04D9FF;
+    font-size: 1.5vw;
+    margin: 2vh;
+    font-family: "Spectral", sans-serif;
+    font-weight: 200;
+    margin-bottom: 2vh;
+}
+
+footer {
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
 }

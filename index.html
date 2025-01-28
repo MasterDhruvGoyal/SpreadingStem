@@ -72,17 +72,17 @@
     <main>
         <div id="wrapper">
             <div class="sidebar">
-                <a href="#Home"><i class="fa-regular fa-house"></i></a>
-                <a href="#Problem"><i class="fa-regular fa-circle-info"></i></a>
-                <a href="#Promote"><i class="fa-regular fa-school"></i></a>
-                <a href="#Learning"><i class="fa-regular fa-flask-vial"></i></a>
-                <a href="#Oppose"><i class="fa-regular fa-yin-yang"></i></a>
+                <a href="#Home" onclick="document.getElementById('Home').scrollIntoView({ behavior: 'smooth' });"><i class="fa-regular fa-house"></i></a>
+                <a href="#Problem" onclick="document.getElementById('Problem').scrollIntoView({ behavior: 'smooth' });"><i class="fa-regular fa-circle-info"></i></a>
+                <a href="#Promote" onclick="document.getElementById('Promote').scrollIntoView({ behavior: 'smooth' });"><i class="fa-regular fa-school"></i></a>
+                <a href="#Learning" onclick="document.getElementById('Learning').scrollIntoView({ behavior: 'smooth' });"><i class="fa-regular fa-flask-vial"></i></a>
+                <a href="#Oppose" onclick="document.getElementById('Oppose').scrollIntoView({ behavior: 'smooth' });"><i class="fa-regular fa-yin-yang"></i></a>
             </div>
             <div id="Home" class="content">
                 <h1 class="titleheading">Spreading STEM Education</h1>
                 <h2 class="subheading">An Advocacy Project</h2>
                 <div id="lmdiv">
-                    <button class="lmbutton" onclick="window.location.href='#Problem'">
+                    <button class="lmbutton" onclick="document.getElementById('Problem').scrollIntoView({ behavior: 'smooth' });">
                         <p id="lmtext">Learn More</p>
                         <i class="fa-light fa-angle-down lmlogo"></i>  
                     </button>
@@ -96,12 +96,12 @@
                     </div>
                     <div class="boxes">
                         <div id="box1">
-                            <button class="impbutton" onclick="window.location.href='#Promote'">
+                            <button class="impbutton" onclick="document.getElementById('Promote').scrollIntoView({ behavior: 'smooth' });">
                                 <p class="probtext">Lack of Implementation</p>
                             </button>
                         </div>
                         <div id="box2">
-                            <button class="resbutton" onclick="window.location.href='#Learning'">
+                            <button class="resbutton" onclick="document.getElementById('Learning').scrollIntoView({ behavior: 'smooth' });">
                                 <p class="probtext">Lack of Resources</p>
                             </button>
                         </div>
@@ -113,49 +113,72 @@
                         <div class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <p>problem 1</p>
+                                    <p class="cardheading">STEM Performance Crisis</p>
+                                    <p class="cardtext">Texas students are experiencing critically low academic performance in STEM subjects, with 55% below grade level in math and declining standardized test scores, threatening future educational and economic competitiveness.</p>
                                 </div>
                                 <div class="flip-card-back">
-                                    <h1>John Doe</h1>
-                                    <p>Architect + Engineer</p>
-                                    <p>We love that guy</p>
+                                    <p class="cardbacktext">1. Focus on enhancing the math and science curriculum to ensure students have a strong foundation in these critical subject</p>
+                                    <p class="cardbacktext">2. Follow a more project-based approach to learning, allowing students to apply theoretical knowledge to real-world scenarios</p>
+                                    <p class="cardbacktext">3. Incorporate STEM principles into various projects and activities to foster a deeper understanding and appreciation of these fields</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="flip-card">
+                        <!--<div class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                                    <p class="cardheading">Skills Gap Dilemma</p>
+                                    <p class="cardtext">There is a growing misalignment between current educational approaches and the evolving STEM job market, resulting in numerous technical positions remaining unfilled and students being inadequately prepared for future workforce demands.</p>
                                 </div>
                                 <div class="flip-card-back">
-                                    <h1>John Doe</h1>
-                                    <p>Architect + Engineer</p>
-                                    <p>We love that guy</p>
+                                    <p class="cardbacktext">1. Increase CTE and STEM Schools in the state</p>
+                                    <p class="cardbacktext">2. Offer more dual credit courses to help studentd gain more credits</p>
+                                    <p class="cardbacktext">3. Increase participation in competitions and apply for internships to help students align with the job market</p>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                         <div class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                                    <p class="cardheading">Academic Deficit</p>
+                                    <p class="cardtext">The United States lags behind Asian countries in academic performance, with global test scores revealing significant weaknesses in Math, Science, and Reading proficiency.</p>
                                 </div>
                                 <div class="flip-card-back">
-                                    <h1>John Doe</h1>
-                                    <p>Architect + Engineer</p>
-                                    <p>We love that guy</p>
+                                    <p class="cardbacktext">1. Implement a specialized curriculum in highschool to target student's interest in a certain profession.</p>
+                                    <p class="cardbacktext">2. Schools and classes customize and make their own curriculum and activites to personalize to each student.</p>
+                                    <p class="cardbacktext">3. Encourage collaboration with local industries to provide real-world STEM experiences and mentorship opportunities.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="Learning" class="section">
-                    <h2 class="headings">Learning</h2>
-                    <p>Resources and methods for learning STEM subjects.</p>
+                    <h2 class="headings">Insuffiecient Resources in STEM</h2>
+                    <div class="resourceinfo">
+                        <div class="restext">
+                            <p class="resheading lefttext">Lack of STEM Resources and Opportunities</p>
+                            <p class="lefttext explain">Increasing funding can help provide for more resources. Implementing a project-based curriculum helps build more hands-on STEM environment. Partnering with companies will increase learning opportunities.</p>
+                        </div>
+                        <div class="reslogo">
+                            <i class="fa-regular fa-circle-dollar rlogo"></i>
+                        </div>
+                    </div>
+                    <div class="horizontal-line"></div>
+                    <div class="resourceinfo">
+                        <div class="reslogo">
+                            <i class="fa-regular fa-medal rlogo"></i>
+                        </div>
+                        <div class="restext">
+                            <p class="resheading righttext">Decline in Student Engagement in STEM</p>
+                            <p class="righttext explain">Create and join extracurriculars and participate in competitions and fun opportunities/activities to help develop STEM skills. Doing this with friends can increase motivation and engagement while still learning.</p>
+                        </div>
+                    </div>
                 </div>
                 <div id="Oppose" class="section">
                     <h2 class="headings">Opposite Views</h2>
-                    <p>Challenges and opposition to STEM education.</p>
                 </div>
+                <footer>
+                    <p class="madeby">Made By: Dhruv Goyal <a class="sources"href="https://docs.google.com/document/d/1lsRqM7ayWEZ21LGk8eqJAQDzSfwWRosjQ0a8m51KT5o/edit?usp=sharing" target="_blank"> View Sources</a></p>
+                </footer>
             </div>
         </div>
     </main>
