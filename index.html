@@ -64,7 +64,7 @@
         href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-light.css"
       >
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron|Playwrite+IN|Tinos">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron|Playwrite+IN|Tinos|Lora|Spectral">
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
 </head>
@@ -72,14 +72,14 @@
     <main>
         <div id="wrapper">
             <div class="sidebar">
+                <a href="#Home"><i class="fa-regular fa-house"></i></a>
                 <a href="#Problem"><i class="fa-regular fa-circle-info"></i></a>
                 <a href="#Promote"><i class="fa-regular fa-school"></i></a>
                 <a href="#Learning"><i class="fa-regular fa-flask-vial"></i></a>
                 <a href="#Oppose"><i class="fa-regular fa-yin-yang"></i></a>
-                <a href="#Bib"><i class="fa-regular fa-book"></i></a>
             </div>
-            <div class="content">
-                <h1 id="titleheading">Spreading STEM Education</h1>
+            <div id="Home" class="content">
+                <h1 class="titleheading">Spreading STEM Education</h1>
                 <h2 class="subheading">An Advocacy Project</h2>
                 <div id="lmdiv">
                     <button class="lmbutton" onclick="window.location.href='#Problem'">
@@ -88,11 +88,27 @@
                     </button>
                 </div>
                 <div id="Problem" class="section">
-                    <h2>Problem</h2>
-                    <p>Information on the problem of STEM education.</p>
+                    <h2 class="headings">Problem</h2>
+                    <div class="probsubtext">
+                        <p class="probsubhead">US and Texas are struggling in STEM subjects and with having STEM education in schools.</p>
+                        <p class="probsubhead">This hinders education and performance across all subjects and is bad for schools, communities and students.</p>
+                        <p class="probsubhead">Click the buttons below to learn more on ways to help grow STEM Education</p>
+                    </div>
+                    <div class="boxes">
+                        <div id="box1">
+                            <button class="impbutton" onclick="window.location.href='#Promote'">
+                                <p class="probtext">Lack of Implementation</p>
+                            </button>
+                        </div>
+                        <div id="box2">
+                            <button class="resbutton" onclick="window.location.href='#Learning'">
+                                <p class="probtext">Lack of Resources</p>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <div id="Promote" class="section">
-                    <h2>Promote</h2>
+                    <h2 class="headings">Promoting STEM Eudcation</h2>
                     <div class="flipcontainer">
                         <div class="flip-card">
                             <div class="flip-card-inner">
@@ -133,16 +149,12 @@
                     </div>
                 </div>
                 <div id="Learning" class="section">
-                    <h2>Learning</h2>
+                    <h2 class="headings">Learning</h2>
                     <p>Resources and methods for learning STEM subjects.</p>
                 </div>
                 <div id="Oppose" class="section">
-                    <h2>Oppose</h2>
+                    <h2 class="headings">Opposite Views</h2>
                     <p>Challenges and opposition to STEM education.</p>
-                </div>
-                <div id="Bib" class="section">
-                    <h2>Bibliography</h2>
-                    <p>References and bibliography related to STEM education.</p>
                 </div>
             </div>
         </div>
